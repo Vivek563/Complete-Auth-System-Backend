@@ -157,8 +157,3 @@ Follow these instructions to set up and run the Express Register application:
 3. Update the environment variables with your API base URL (`http://localhost:8000`).
 4. Test each endpoint by sending requests.
 
-## 6. Conclusion
-
-Congratulations! You have successfully set up and tested the Express Register APIs. If you encounter any issues or have questions, please refer to the documentation or contact our support team.
-
-Feel free to adapt this documentation according to your specific requirements and application details.
