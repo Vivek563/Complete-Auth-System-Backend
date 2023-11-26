@@ -1,7 +1,3 @@
-Certainly! Let's create comprehensive documentation based on the provided Postman collection. This example assumes that you have an Express.js application running on `http://localhost:8000`.
-
----
-
 # Express Register API Documentation
 
 ## Table of Contents
