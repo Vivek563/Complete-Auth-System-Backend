@@ -162,7 +162,7 @@ Follow these instructions to set up and run the Express Register application:
 4. Test each endpoint by sending requests.
 
 ## Note
-I have added i sample env file and removed the .env file from gitignore. Please rename the .env.sample to .env and add your own credentials.
+I have added a sample env file and removed the .env file from gitignore. Please rename the .env.sample to .env and add your own credentials.
 And also add your own email and password in the .env file for sending email.
   
 
