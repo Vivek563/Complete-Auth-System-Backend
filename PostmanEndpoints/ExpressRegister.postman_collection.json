@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "230181e4-dcf4-41c8-9ae2-2d81e8b83788",
 		"name": "ExpressRegister",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "21866190"
 	},
 	"item": [
@@ -19,26 +19,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Vivek\",\r\n    \"email\":\"vivek@example.com\",\r\n    \"password\":\"12345\",\r\n    \"password_confirmation\":\"12345\",\r\n    \"tc\":\"true\"\r\n}",
+					"raw": "{\r\n    \"name\":\"Vivek\",\r\n    \"email\":\"vivek@example.com\",\r\n    \"password\":\"12345\",\r\n    \"password_confirmation\":\"12345\",\r\n    \"tc\":\"true\",\r\n    \"role\":\"admin\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8000/api/user/register",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"user",
-						"register"
-					]
-				}
+				"url": "http://localhost:8000/api/user/register"
 			},
 			"response": []
 		},
@@ -62,19 +50,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8000/api/user/login",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"user",
-						"login"
-					]
-				}
+				"url": "http://localhost:8000/api/user/login"
 			},
 			"response": []
 		},
@@ -83,13 +59,9 @@
 			"request": {
 				"auth": {
 					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTYzNzg1ODM4MTJkMzgyYTJkODg0YjkiLCJpYXQiOjE3MDEwMTgyMjMsImV4cCI6MTcwMTQ1MDIyM30.NGm1I7u4GQtx0vYCw4sek7FZlUss7U0i34amxGfepiA",
-							"type": "string"
-						}
-					]
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTY0MGZmZGRmZmFmZTU1NTQ2ZjhiMjAiLCJpYXQiOjE3MDEwNTY1NDQsImV4cCI6MTcwMTQ4ODU0NH0.vA5wQkS02j6n6vG63GyGGnVlzZSF14yIG7k16xIf6V8"
+					}
 				},
 				"method": "POST",
 				"header": [
@@ -101,41 +73,25 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"password\":\"123456\",\r\n    \"password_confirmation\":\"123456\"\r\n}",
+					"raw": "{\r\n    \"password\":\"1234567\",\r\n    \"password_confirmation\":\"1234567\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8000/api/user/changepassword",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"user",
-						"changepassword"
-					]
-				}
+				"url": "http://localhost:8000/api/user/changepassword"
 			},
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "loggeduser",
 			"request": {
 				"auth": {
 					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTYzNzg1ODM4MTJkMzgyYTJkODg0YjkiLCJpYXQiOjE3MDEwMTgyMjMsImV4cCI6MTcwMTQ1MDIyM30.NGm1I7u4GQtx0vYCw4sek7FZlUss7U0i34amxGfepiA",
-							"type": "string"
-						}
-					]
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTY0MGZmZGRmZmFmZTU1NTQ2ZjhiMjAiLCJpYXQiOjE3MDEwNTY1NDQsImV4cCI6MTcwMTQ4ODU0NH0.vA5wQkS02j6n6vG63GyGGnVlzZSF14yIG7k16xIf6V8"
+					}
 				},
 				"method": "GET",
 				"header": [
@@ -145,19 +101,7 @@
 						"type": "text"
 					}
 				],
-				"url": {
-					"raw": "http://localhost:8000/api/user/loggeduser",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"user",
-						"loggeduser"
-					]
-				}
+				"url": "http://localhost:8000/api/user/loggeduser"
 			},
 			"response": []
 		},
@@ -181,19 +125,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8000/api/user/send-reset-password-email",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"user",
-						"send-reset-password-email"
-					]
-				}
+				"url": "http://localhost:8000/api/user/send-reset-password-email"
 			},
 			"response": []
 		},
@@ -244,8 +176,21 @@
 		{
 			"name": "adminDashboard",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTY0MGZmZGRmZmFmZTU1NTQ2ZjhiMjAiLCJpYXQiOjE3MDEwNTY1NDQsImV4cCI6MTcwMTQ4ODU0NH0.vA5wQkS02j6n6vG63GyGGnVlzZSF14yIG7k16xIf6V8"
+					}
+				},
 				"method": "GET",
-				"header": []
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8000/api/user/admin/dashboard"
 			},
 			"response": []
 		}

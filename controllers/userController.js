@@ -112,12 +112,13 @@ class UserController {
         const link = `http://127.0.0.1:3000/api/user/reset/${user._id}/${token}`
         console.log(link)
         // Send Email
-        let info = await transporter.sendMail({
-          from: process.env.EMAIL_FROM,
-          to: user.email,
-          subject: " Password Reset Link",
-          html: `<a href=${link}>Click Here</a> to Reset Your Password`
-        })
+        // let info = await transporter.sendMail({
+        //   from: process.env.EMAIL_FROM,
+        //   to: user.email,
+        //   subject: " Password Reset Link",
+        //   html: `<a href=${link}>Click Here</a> to Reset Your Password`
+        // })
+        // comment out the above code and uncomment the below code to test the API without sending email
         logger.log("info", `User ${user.name} password reset email sent successfully`);
         res.send({ "status": "success", "message": "Password Reset Email Sent... Please Check Your Email" })
       } else {

@@ -149,6 +149,10 @@ Follow these instructions to set up and run the Express Register application:
    ```bash
    npm start
    ```
+5. Start Test Case
+  ```bash
+   npm test
+  ```
 
 ## 5. Testing with Postman
 
@@ -156,4 +160,9 @@ Follow these instructions to set up and run the Express Register application:
 2. Import the provided Postman collection.
 3. Update the environment variables with your API base URL (`http://localhost:8000`).
 4. Test each endpoint by sending requests.
+
+## Note
+I have added i sample env file and removed the .env file from gitignore. Please rename the .env.sample to .env and add your own credentials.
+And also add your own email and password in the .env file for sending email.
+  
 
